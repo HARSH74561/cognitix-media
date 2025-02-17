@@ -1,0 +1,71 @@
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 40px;
+  }
+  
+  form label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  form input::placeholder,
+  form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #008efa;
+    outline: none;
+  }
+  
+  form button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #0e0e0e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #4A00E0;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px; /* Adjust as needed */
+  }
+  
+  .contact-content .card {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* Increase the bottom margin of paragraphs within the contact section */
+  .contact-content p {
+    margin-bottom: 30px; /* Adjust this value as needed */
+  }
+  

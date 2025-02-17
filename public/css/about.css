@@ -1,0 +1,19 @@
+.team-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    padding: 20px 0;
+}
+
+.team-logo {
+    width: 975px; /* Adjust width */
+    height: 800; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensures responsiveness */
+}
+
+.team-logo-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.3);
+  }

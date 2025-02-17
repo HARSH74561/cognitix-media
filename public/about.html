@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Cognitix Media</title>
+  <link rel="stylesheet" href="css/index.css" />
+  
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <!-- Header (kept exactly the same) -->
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" class="nav-logo">
+      </a>
+      <a href="index.html">
+        <img src="images/logo2.png" alt="Logo" class="nav-logo2">
+      </a>
+      <!-- Hamburger button for mobile -->
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-button">Home</a></li>
+        <li><a href="about.html" class="nav-button">About Us</a></li>
+        <li><a href="services.html" class="nav-button">Services</a></li>
+        <li><a href="expertise.html" class="nav-button">Expertise</a></li>
+        <li><a href="portfolio.html" class="nav-button">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-button">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- JavaScript to toggle the mobile menu -->
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    }
+  </script>
+</body>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section for About Page -->
+    <section class="hero about-hero">
+      <h1>About Us</h1>
+      <p>Discover our journey, mission, and values.</p>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content">
+      <div class="card-container">
+        <div class="card">
+          <h3>Our Story</h3>
+          <p>
+            Founded in 2024, Cognitix Media has been at the forefront of digital innovation, combining creativity with technology to deliver exceptional marketing strategies.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>
+            We empower businesses with cutting-edge digital solutions that drive growth, engagement, and success.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Our Team</h3>
+          <p>
+            Our diverse team of experts in marketing, design, and technology is united by a passion for transforming brands and shaping the future of digital media.
+          </p>
+        </div>
+      </div>
+      <div class="team-logo-container">
+        <img src="images/team.jpg" alt="Our Team" class="team-logo" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Waves (kept the same) -->
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+
+  <!-- Footer (kept exactly the same) -->
+  <footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com/cognitixmedia" target="_blank" title="Facebook">
+            <img src="images/facebook.webp" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.instagram.com/cognitixmedia/" target="_blank" title="Instagram">
+            <img src="images/insta.jpg" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://x.com/Cognitixmedia" target="_blank" title="Twitter">
+            <img src="images/x.webp" alt="Twitter" style="width: 30px; height: 30px;">
+        </a>
+        <a href=" https://www.linkedin.com/in/cognitix-media-968873350/" target="_blank" title="Twitter">
+          <img src="images/linkedin.png" alt="Twitter" style="width: 30px; height: 30px;">
+      </a>
+    </div>
+    <p>Contact us: <a href="mailto:support@cognitixmedia.com" class="mail-link">support@cognitixmedia.com</a></p>
+    <p>&copy; 2024 Cognitix Media. All Rights Reserved.</p>
+</footer>
+
+  <!-- Optional JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

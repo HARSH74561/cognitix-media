@@ -1,0 +1,574 @@
+/* ==========================================================================
+   GLOBAL STYLES & ANIMATIONS
+   ========================================================================== */
+   
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+    background: linear-gradient(315deg, #0e0e6e 3%, #4A00E0 38%, #8E2DE2 68%, #4A00E0 98%);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    animation: gradient 15s ease infinite;
+  }
+  
+  /* Gradient Background Animation */
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Fade-In Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-Down Animation (for header) */
+  @keyframes fadeDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Wave Animation */
+  @keyframes wave {
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+  }
+  
+  
+  /* ==========================================================================
+     HEADER & NAVIGATION
+     ========================================================================== */
+  
+  header {
+    font-family: 'Georgia', serif;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s, padding 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0; /* Initially hidden */
+    animation: fadeDown 1s ease-in-out forwards;
+  }
+  /* Default: hide hamburger on larger screens */
+ .hamburger {
+  display: none;
+ }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .nav-logo {
+    width: 60px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .nav-logo2 {
+    width: 150px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .navbar-brand {
+    font-family: "Oswald", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.4s, transform 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #008efa, #4A00E0, #8E2DE2);
+    transform: scale(1.1);
+  }
+  @media (max-width: 768px) {
+    
+    header {
+      width: 80%;
+      margin: auto;
+      position: relative;
+    }
+    
+    .hamburger {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      z-index: 2;
+    }
+    
+    .nav-menu {
+      display: none; /* Hidden by default */
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 60px;  /* Pushes the menu further down to avoid overlap */
+    }
+    
+    .nav-menu.active {
+      display: flex; /* Shows the menu when toggled */
+    }
+  }
+  
+  
+  
+  
+  /* ==========================================================================
+     HERO SECTION
+     ========================================================================== */
+
+     /*<!-- Ensure star Container Covers the Section -->*/
+     
+     
+     /* Landing Section */
+     #landing {
+         position: relative;
+         height: 90vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-start;
+         padding-top: 9vh;
+         color: white;
+         text-align: center;
+         overflow: hidden;
+         background: transparent; /* Let the body's gradient show */ 
+     }
+     @media (max-width: 768px) {
+      #landing {
+        height: 550px;              /* Let content determine the height */
+        
+        justify-content: center;   /* Center content vertically */
+      }
+    }
+    
+     /* Landing Section Styles */
+    #landing {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Moves content towards the top */
+      padding-top: 10vh; /* Adjust as needed */
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Particle Container */
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    /* Landing Text Styles */
+    #landing h1,
+    #landing p {
+      position: relative;
+      z-index: 1;
+      font-family: 'Playfair Display', serif;
+    }
+  
+ 
+     /* Landing Text Content */
+     #landing h1,
+     #landing p {
+         position: relative;
+         z-index: 1;
+     }
+        
+  
+  h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  h1::after, h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: white;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  }
+  h3{
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    padding-top: 200px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.2s ease-in-out forwards;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    padding-top: 230px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.2s ease-in-out forwards;
+    
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.2s ease-in-out forwards;
+  }
+  
+  
+  /* ==========================================================================
+     CONTENT CARDS & IMAGE CONTAINERS
+     ========================================================================== */
+  
+  /* Card Container */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px;
+  }
+  
+  /* ==========================================================================
+   CARD ICON STYLING
+   ========================================================================== */
+   .card-icon {
+    width: 280px;
+    height: 150px;
+    border-radius: 30px; /* Increased from 15px to 30px */
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* Cards */
+  .card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+  }
+  .card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Containers (Team, Services, Expertise) */
+  .team-logo-container,
+  .services-logo-container,
+  .expertise-logo-container {
+    display: inline-block;
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .team-logo-container:hover,
+  .services-logo-container:hover,
+  .expertise-logo-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.3);
+  }
+  .team-logo {
+    
+    width: 1100px; /* Increased width from 950px to 1100px */
+    height: 600px; /* Maintain aspect ratio */
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+  .services-logo{
+    width: 1100px; /* Increased width from 950px to 1100px */
+    height: 600px; /* Maintain aspect ratio */
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+  .expertise-logo {
+    width: 1100px; /* Increased width from 950px to 1100px */
+    height: 600px; /* Maintain aspect ratio */
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+  
+  /* Brand Logos (if used within cards) */
+  .brand-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  
+  /* ==========================================================================
+   CONTACT FORM CONTAINER (Centers & Widens the Form)
+   ========================================================================== */
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px; /* Space between the form and footer */
+  }
+  
+  .contact-content .card {
+    width: 90%;
+    max-width: 500px; /* Increase this value to make the form wider */
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+  }
+  
+  /* ==========================================================================
+     CONTACT FORM STYLES
+     ========================================================================== */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 40px;
+  }
+  
+  form label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  form input::placeholder,
+  form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #008efa;
+    outline: none;
+  }
+  
+  form button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #0e0e0e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #4A00E0;
+  }
+  
+  
+  
+  /* ==========================================================================
+     FOOTER
+     ========================================================================== */
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* White background with 20% opacity */
+    backdrop-filter: blur(10px);         /* Apply a 10px blur to content behind the element */
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1rem;
+  }
+  .mail-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep the default text color */
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Gradient Hover Effect */
+.mail-link:hover {
+    background: linear-gradient(90deg, #007BFF, #8000FF); /* Blue to Purple */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the text take the gradient color */
+}
+
+
+/* Remove underline from all footer links */
+footer a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps the default text color */
+}
+  
+  /* ==========================================================================
+     BACKGROUND WAVES
+     ========================================================================== */
+  
+  .wave {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 5s linear infinite;
+    opacity: 0.6;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .wave:nth-of-type(2) {
+    bottom: -1.5em;
+    animation: wave 6s linear reverse infinite;
+    opacity: 0.5;
+  }
+  
+  .wave:nth-of-type(3) {
+    bottom: -3em;
+    animation: wave 7s linear reverse infinite;
+    opacity: 0.4;
+  }
+  
+  
+  /* ==========================================================================
+     RESPONSIVE DESIGN
+     ========================================================================== */
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+      padding-top: 120px;
+    }
+    h2 {
+      font-size: 2rem;
+      padding-top: 180px;
+    }
+    .nav-logo2 {
+      width: 120px;
+    }
+    .team-logo,
+    .services-logo,
+    .expertise-logo {
+      width: 100%;
+      height: auto;
+    }
+    .card {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  

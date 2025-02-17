@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Cognitix Media</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+<body>
+  <!-- Header (same as all pages) -->
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" class="nav-logo">
+      </a>
+      <a href="index.html">
+        <img src="images/logo2.png" alt="Logo" class="nav-logo2">
+      </a>
+      <!-- Hamburger button for mobile -->
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-button">Home</a></li>
+        <li><a href="about.html" class="nav-button">About Us</a></li>
+        <li><a href="services.html" class="nav-button">Services</a></li>
+        <li><a href="expertise.html" class="nav-button">Expertise</a></li>
+        <li><a href="portfolio.html" class="nav-button">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-button">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- JavaScript to toggle the mobile menu -->
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    }
+  </script>
+</body>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section for Services Page -->
+    <section class="hero services-hero">
+      <h1>Our Services</h1>
+      <p>Explore our wide range of digital marketing and tech solutions.</p>
+    </section>
+
+    <!-- Services Cards Section -->
+    <section class="services-content">
+      <div class="card-container">
+        <div class="card">
+          <img src="images/digital-strategy.jpeg" alt="Digital Strategy" class="card-icon" />
+          <h3>Digital Strategy</h3>
+          <p>
+            We craft bespoke digital strategies to drive your online growth and maximize ROI.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/content.webp" alt="Content Marketing" class="card-icon" />
+          <h3>Content Marketing</h3>
+          <p>
+            Our engaging content marketing services build a strong brand presence and drive audience engagement.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/ppc.jpg" alt="PPC Advertising" class="card-icon" />
+          <h3>PPC Advertising</h3>
+          <p>
+            Maximize your advertising budget with targeted pay-per-click campaigns that deliver measurable results.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/webd.avif" alt="Web Development" class="card-icon" />
+          <h3>Web Development</h3>
+          <p>
+            Our expert developers build responsive, dynamic websites tailored to your business needs.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/E-commerce.jpg" alt="E-commerce Solutions" class="card-icon" />
+          <h3>E-commerce Solutions</h3>
+          <p>
+            We offer comprehensive e-commerce solutions—from design to development—to help your online store succeed.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/anr.jpg" alt="Analytics & Reporting" class="card-icon" />
+          <h3>Analytics & Reporting</h3>
+          <p>
+            Track performance and make informed decisions with our in-depth analytics and reporting services.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/mobiledev.png" alt="Mobile App Development" class="card-icon" />
+          <h3>Mobile App Development</h3>
+          <p>
+            We develop user-friendly mobile applications that drive engagement and deliver exceptional user experiences.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/branding.png" alt="Branding & Identity" class="card-icon" />
+          <h3>Branding & Identity</h3>
+          <p>
+            Create a strong, memorable brand identity that resonates with your target audience and sets you apart.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Waves (kept the same across the site) -->
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+
+  <!-- Footer (same as all pages) -->
+  <footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com/cognitixmedia" target="_blank" title="Facebook">
+            <img src="images/facebook.webp" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.instagram.com/cognitixmedia/" target="_blank" title="Instagram">
+            <img src="images/insta.jpg" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://x.com/Cognitixmedia" target="_blank" title="Twitter">
+            <img src="images/x.webp" alt="Twitter" style="width: 30px; height: 30px;">
+        </a>
+        <a href=" https://www.linkedin.com/in/cognitix-media-968873350/" target="_blank" title="Twitter">
+          <img src="images/linkedin.png" alt="Twitter" style="width: 30px; height: 30px;">
+      </a>
+    </div>
+    <p>Contact us: <a href="mailto:support@cognitixmedia.com" class="mail-link">support@cognitixmedia.com</a></p>
+    <p>&copy; 2024 Cognitix Media. All Rights Reserved.</p>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

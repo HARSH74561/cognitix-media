@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expertise - Cognitix Media</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/expertise.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <!-- Header (kept exactly the same) -->
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" class="nav-logo">
+      </a>
+      <a href="index.html">
+        <img src="images/logo2.png" alt="Logo" class="nav-logo2">
+      </a>
+      <!-- Hamburger button for mobile -->
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-button">Home</a></li>
+        <li><a href="about.html" class="nav-button">About Us</a></li>
+        <li><a href="services.html" class="nav-button">Services</a></li>
+        <li><a href="expertise.html" class="nav-button">Expertise</a></li>
+        <li><a href="portfolio.html" class="nav-button">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-button">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- JavaScript to toggle the mobile menu -->
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    }
+  </script>
+</body>
+  
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section for Expertise Page -->
+      <section class="hero expertise-hero">
+        <h1>Our Expertise</h1>
+        <p>Discover our specialized skills and innovative solutions.</p>
+      </section>
+  
+      <!-- Expertise Grid (Images Only) -->
+      <section class="expertise-grid">
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="images/Adbrix.webp" alt="Expertise 1" class="expertise-image" />
+          </div>
+          <div class="grid-item">
+            <img src="images/Adjust.webp" alt="Expertise 2" class="expertise-image" />
+          </div>
+          <div class="grid-item">
+            <img src="images/app_metrica.webp" alt="Expertise 3" class="expertise-image" />
+          </div>
+          <div class="grid-item">
+            <img src="images/Appsflyer.webp" alt="Expertise 4" class="expertise-image" />
+          </div>
+          <div class="grid-item">
+            <img src="images/Branch.webp" alt="Expertise 5" class="expertise-image" />
+          </div>
+          <div class="grid-item">
+            <img src="images/Kochava.webp" alt="Expertise 6" class="expertise-image" />
+          </div>
+          <div class="grid-item">
+            <img src="images/tenjin.webp" alt="Expertise 7" class="expertise-image" />
+          </div>
+          <div class="grid-item">
+            <img src="images/Singular.webp" alt="Expertise 8" class="expertise-image" />
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <!-- Waves (kept the same across the site) -->
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  
+    <!-- Footer (kept exactly the same) -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/cognitixmedia" target="_blank" title="Facebook">
+                <img src="images/facebook.webp" alt="Facebook" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://www.instagram.com/cognitixmedia/" target="_blank" title="Instagram">
+                <img src="images/insta.jpg" alt="Instagram" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://x.com/Cognitixmedia" target="_blank" title="Twitter">
+                <img src="images/x.webp" alt="Twitter" style="width: 30px; height: 30px;">
+            </a>
+            <a href=" https://www.linkedin.com/in/cognitix-media-968873350/" target="_blank" title="Twitter">
+              <img src="images/linkedin.png" alt="Twitter" style="width: 30px; height: 30px;">
+          </a>
+        </div>
+        <p>Contact us: <a href="mailto:support@cognitixmedia.com" class="mail-link">support@cognitixmedia.com</a></p>
+        <p>&copy; 2024 Cognitix Media. All Rights Reserved.</p>
+    </footer>
+  
+    <script src="js/script.js"></script>
+  </body>
+  </html>

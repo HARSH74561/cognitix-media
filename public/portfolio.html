@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Cognitix Media</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <!-- Header (same as all pages) -->
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" class="nav-logo">
+      </a>
+      <a href="index.html">
+        <img src="images/logo2.png" alt="Logo" class="nav-logo2">
+      </a>
+      <!-- Hamburger button for mobile -->
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-button">Home</a></li>
+        <li><a href="about.html" class="nav-button">About Us</a></li>
+        <li><a href="services.html" class="nav-button">Services</a></li>
+        <li><a href="expertise.html" class="nav-button">Expertise</a></li>
+        <li><a href="portfolio.html" class="nav-button">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-button">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- JavaScript to toggle the mobile menu -->
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    }
+  </script>
+</body>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section for Portfolio Page -->
+    <section class="hero portfolio-hero">
+      <h1>Our Portfolio</h1>
+      <p>Showcasing our transformative projects and creative collaborations.</p>
+    </section>
+
+    <!-- Portfolio Cards Section -->
+    <section class="portfolio-content">
+      <div class="card-container">
+        <!-- Card 1: Mashreq neo UAE -->
+        <div class="card">
+          <img src="images/mashreq neo.webp" alt="Mashreq neo UAE" class="card-icon" />
+          <h3>Mashreq neo UAE</h3>
+          <p>
+            Leverage our DSP and in-app traffic, combined with fintech data, to boost user engagement and increase customer acquisitions.
+          </p>
+        </div>
+        <!-- Card 2: Careem UAE -->
+        <div class="card">
+          <img src="images/Careem.svg" alt="Careem UAE" class="card-icon" />
+          <h3>Careem UAE</h3>
+          <p>
+            Utilize our DSP and in-app traffic to grow careem's user base and increase the number of first-time remittance users.
+          </p>
+        </div>
+        <!-- Card 3: Yakoot UAE -->
+        <div class="card">
+          <img src="images/yaqoot.jpg" alt="Yakoot UAE" class="card-icon" />
+          <h3>Yaqoot UAE</h3>
+          <p>
+            Through the strategic use of our DSP, Native and in-app traffic, we've consistently accelerated user acquisitions, achieving significant monthly growth.
+          </p>
+        </div>
+        <!-- Card 4: Virgin Mobile UAE -->
+        <div class="card">
+          <img src="images/virgin-mobile-uae.png" alt="Virgin Mobile UAE" class="card-icon" />
+          <h3>Virgin Mobile UAE</h3>
+          <p>
+            Through the strategic use of our DSP, in-app traffic, and OEM traffic, we have consistently driven a month-over-month increase in user acquisitions.
+          </p>
+        </div>
+        <!-- Card 5: Disney Hotstar -->
+        <div class="card">
+          <img src="images/hotstar.jpeg" alt="Disney Hotstar" class="card-icon" />
+          <h3>Disney Hotstar</h3>
+          <p>
+            We collaborated with Disney Hotstar to create immersive digital experiences that captivated audiences and elevated brand presence.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/fiverr.png" alt="Disney Hotstar" class="card-icon" />
+          <h3>Fiverr</h3>
+          <p>
+            Increase Fiverr’s brand visibility, user engagement, and freelancer sign-ups through targeted DSP and in-app advertising.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Waves (kept the same across the site) -->
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+
+  <!-- Footer (same as all pages) -->
+  <footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com/cognitixmedia" target="_blank" title="Facebook">
+            <img src="images/facebook.webp" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.instagram.com/cognitixmedia/" target="_blank" title="Instagram">
+            <img src="images/insta.jpg" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://x.com/Cognitixmedia" target="_blank" title="Twitter">
+            <img src="images/x.webp" alt="Twitter" style="width: 30px; height: 30px;">
+        </a>
+        <a href=" https://www.linkedin.com/in/cognitix-media-968873350/" target="_blank" title="Twitter">
+          <img src="images/linkedin.png" alt="Twitter" style="width: 30px; height: 30px;">
+      </a>
+    </div>
+    <p>Contact us: <a href="mailto:support@cognitixmedia.com" class="mail-link">support@cognitixmedia.com</a></p>
+    <p>&copy; 2024 Cognitix Media. All Rights Reserved.</p>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Cognitix Media</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <!-- Header (Same across all pages) -->
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" class="nav-logo">
+      </a>
+      <a href="index.html">
+        <img src="images/logo2.png" alt="Logo" class="nav-logo2">
+      </a>
+      <!-- Hamburger button for mobile -->
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-button">Home</a></li>
+        <li><a href="about.html" class="nav-button">About Us</a></li>
+        <li><a href="services.html" class="nav-button">Services</a></li>
+        <li><a href="expertise.html" class="nav-button">Expertise</a></li>
+        <li><a href="portfolio.html" class="nav-button">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-button">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- JavaScript to toggle the mobile menu -->
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    }
+  </script>
+</body>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section for Contact Page -->
+    <section class="hero contact-hero">
+      <h1>Contact Us</h1>
+      
+    </section>
+
+    <!-- Contact Form Section -->
+<section class="contact-content" style="margin-bottom: 100px;">
+  <div class="card">
+    
+    <form id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name" />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required placeholder="Enter subject" />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <!-- Placeholder for response messages -->
+    <p id="responseMessage"></p>
+  </div>
+</section>
+</main>
+
+
+  <!-- Waves (Same as other pages) -->
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+
+  <!-- Footer (Same across all pages) -->
+  <footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com/cognitixmedia" target="_blank" title="Facebook">
+            <img src="images/facebook.webp" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.instagram.com/cognitixmedia/" target="_blank" title="Instagram">
+            <img src="images/insta.jpg" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://x.com/Cognitixmedia" target="_blank" title="Twitter">
+            <img src="images/x.webp" alt="Twitter" style="width: 30px; height: 30px;">
+        </a>
+        <a href=" https://www.linkedin.com/in/cognitix-media-968873350/" target="_blank" title="Twitter">
+          <img src="images/linkedin.png" alt="Twitter" style="width: 30px; height: 30px;">
+      </a>
+    </div>
+    <p>Contact us: <a href="mailto:support@cognitixmedia.com" class="mail-link">support@cognitixmedia.com</a></p>
+    <p>&copy; 2024 Cognitix Media. All Rights Reserved.</p>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
